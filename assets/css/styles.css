@@ -201,9 +201,32 @@ ul, ol {
     text-align: end;
 }
 
+.container_portada {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+}
+
+.image_portada {
+    flex: 1;
+    padding: 10px;
+}
+
 /* //////////////
    Compañia
 //////////////*/
+
+#index {
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    color: var(--white-color);
+}
+
+#index p {
+    color: var(--white-color);
+}
 
 #compania {
     background-size: cover;
@@ -564,4 +587,11 @@ footer .list-inline .list-inline-item {
         position:relative;
         top:0px;
     }
+ }
+
+@media (max-width: 768px) {
+     .container_portada {
+         flex-direction: column;
+         text-align: center;
+     }
  }
